@@ -1,13 +1,17 @@
 # Python Data Analysis Projects
-Practical end-to-end data pipeline and policy analysis projects built with Python, Pandas, NumPy, and Matplotlib.
+Practical end-to-end data pipeline, banking risk, macroeconomic, and public policy projects built with Python, Pandas, NumPy, and Matplotlib.
 
-## Projects
-- **01. Personal Monthly Expense Analyzer:** Cleans raw transaction exports, handles missing values and string casing, calculates spending distributions (mean, median, 80th-percentile outliers), and visualizes category totals and cumulative monthly spend.
+## Projects Directory
+### Phase 1: Core Single-Table Data Pipelines
+- **01. Personal Monthly Expense Analyzer:** Cleans raw transaction exports, handles missing categories and string casing, calculates spending distributions (mean, median, 80th-percentile outliers), and visualizes category totals alongside cumulative monthly spend.
 - **02. E-Commerce Store Performance Audit:** Removes duplicate transaction records, filters negative order quantities from returns and cancellations, derives gross revenue metrics, and visualizes product-level sales alongside customer regional distributions.
 - **03. Daily Health & Step Tracker:** Handles sensor dropouts using median imputation, tracks a 3-day smoothed rolling moving average against 10k daily step targets, and evaluates Pearson correlation between sleep duration and resting heart rate.
 - **04. RBI Policy Rate & CPI Inflation Transmission Tracker:** Analyzes macroeconomic time-series data against the RBI Monetary Policy Committee (MPC) 2%–6% tolerance band and 4% target, computes the real policy repo rate, and visualizes inflation breach dynamics alongside real interest rate trajectories.
 - **05. State-Wise Scheme Execution Audit:** Evaluates state-level public scheme performance (MGNREGA/JJM model), audits fund utilization efficiency tiers against national benchmarks, and evaluates women's workforce participation shares against statutory baselines.
+
+### Phase 2: Relational Architectures, Composite Indices & Structural Policy
 - **06. Banking Sector Asset Quality & NPA Stress Audit (RBI FSR Model):** Performs relational merges (`pd.merge`) across balance sheet and loan quality datasets, derives core regulatory ratios (GNPA %, Net NPA %, Provision Coverage Ratio, and Credit-to-Deposit ratio), benchmarks Public Sector Banks (PSBs) against Private Banks, and maps balance sheet exposure against RBI prudential thresholds.
 - **07. Composite Governance Index (NITI Aayog Aspirational Districts Model):** Constructs a multi-sector governance evaluation framework across Health, Education, and Infrastructure. Implements directional Min-Max normalization for positive and negative indicators, computes sector-weighted composite scores, assigns statutory tier classifications (Achiever, Front Runner, Performer, Aspirant), and visualizes dimensional trade-offs between top and lagging administrative units.
 - **08. India's External Sector Dynamics (Trade Deficit, Crude Oil, & USD/INR):** Analyzes macroeconomic vulnerability through merchandise trade balance calculations, import coverage ratios, and month-over-month rate variations. Implements 1-month time-series lag structures (`shift()`) to evaluate delayed commodity price shocks and visualizes currency transmission using dual-axis (`twinx`) multi-scale time-series plotting.
 - **09. Public Finance & Fiscal Federalism (Union Budget vs. State Devolutions):** Audits Union tax collections against the 15th Finance Commission statutory framework. Separates the constitutional divisible pool from non-shareable cesses and surcharges, computes effective state devolution shares relative to Gross Tax Revenue (GTR), and visualizes the fiscal wedge created by cess expansion over multi-year budget cycles.
+- **10. Labour Market Dynamics & Gender Gap (MoSPI PLFS Model):** Examines workforce participation using multi-dimensional reshaping (`pivot_table`), evaluates the rural-urban gender participation gap in LFPR and WPR, and visualizes longitudinal trends alongside structural employment composition (salaried vs. self-employed vs. casual labor).
