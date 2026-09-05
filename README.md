@@ -1,7 +1,8 @@
 # Python Data Analysis Projects
-Practical end-to-end data pipeline, banking risk, macroeconomic, and public policy projects built with Python, Pandas, NumPy, and Matplotlib.
+An end-to-end portfolio of 16 data engineering pipelines, banking risk models, macroeconomic econometric forecasts, interactive dashboards, and public finance audits built with Python, Pandas, NumPy, Matplotlib, Plotly, SciPy, and scikit-learn.
 
 ## Projects Directory
+
 ### Phase 1: Core Single-Table Data Pipelines
 - **01. Personal Monthly Expense Analyzer:** Cleans raw transaction exports, handles missing categories and string casing, calculates spending distributions (mean, median, 80th-percentile outliers), and visualizes category totals alongside cumulative monthly spend.
 - **02. E-Commerce Store Performance Audit:** Removes duplicate transaction records, filters negative order quantities from returns and cancellations, derives gross revenue metrics, and visualizes product-level sales alongside customer regional distributions.
@@ -16,7 +17,7 @@ Practical end-to-end data pipeline, banking risk, macroeconomic, and public poli
 - **09. Public Finance & Fiscal Federalism (Union Budget vs. State Devolutions):** Audits Union tax collections against the 15th Finance Commission statutory framework. Separates the constitutional divisible pool from non-shareable cesses and surcharges, computes effective state devolution shares relative to Gross Tax Revenue (GTR), and visualizes the fiscal wedge created by cess expansion over multi-year budget cycles.
 - **10. Labour Market Dynamics & Gender Gap (MoSPI PLFS Model):** Examines workforce participation using multi-dimensional reshaping (`pivot_table`), evaluates the rural-urban gender participation gap in LFPR and WPR, and visualizes longitudinal trends alongside structural employment composition (salaried vs. self-employed vs. casual labor).
 
-### Phase 3: Database Pipelines, SQL Integration & Live Dashboards
+### Phase 3: Database Pipelines, Live APIs, Interactive Visuals & Machine Learning
 - **11. SQL-Powered Public Procurement & Tender Audit (`sqlite3` + Pandas):** Builds an in-memory relational database modeling public tender allocations (GeM framework). Leverages SQL DDL/DML, multi-table `INNER JOIN` operations, conditional aggregations (`CASE WHEN`), and grouped metrics inside `pd.read_sql_query()` to audit vendor concentration risks and statutory MSME procurement thresholds.
 - **12. Automated Global Macro Data Pipeline (World Bank REST API + Pandas):** Ingests live cross-country macroeconomic indicators programmatically using Python's `requests` library without hardcoded mock data. Unpacks nested JSON response trees, performs multidimensional reshaping (`pivot`), derives cross-national growth resilience matrices, and maps post-pandemic economic recovery trajectories across key emerging markets.
 - **13. Interactive Macro & Governance Dashboard (Plotly Interactive Analytics):** Transitions static analytical pipelines into production-grade interactive dashboards. Implements dual-trace macroeconomic time-series with interactive range sliders and unified hover inspection, multidimensional bubble scatter matrices mapping governance performance against demographic scale, and hierarchical sunburst visualizations decomposing fiscal revenue structures.
